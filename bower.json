@@ -1,0 +1,32 @@
+{
+  "name": "fcoo-latlng-format",
+  "version": "1.0.0",
+  "homepage": "https://github.com/FCOO/fcoo-latlng-format",
+  "authors": [
+    "Niels Holt"
+  ],
+  "description": "",
+  "main": [
+    "dist/fcoo-latlng-format.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FCOO/fcoo-latlng-format.git"
+  },
+  "dependencies": {
+    "latlng-format": "fcoo/latlng-format#^2.0.0",
+    "fcoo-settings": "fcoo/fcoo-settings#^1.2.0"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "moduleType": [
+    "es6"
+  ]
+}

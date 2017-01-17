@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="da" style="font-size: 100%">
+<head>
+	<title>fcoo.dk - fcoo-latlng-format - Demo</title>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv='x-dns-prefetch-control' content='on'>
+
+	<meta name='copyright' content='FCOO'>
+	<meta name='owner' content='FCOO'>
+
+</head>
+
+<body>
+
+
+	
+	
+	<script src="bower_components.js"></script>
+	<script src="../src/fcoo-latlng-format.js"></script>
+	<script>
+        var save = window.fcoo.settings.get('latlng');
+        window.fcoo.settings.set('latlng', 0);
+        document.write('Format=0 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
+
+        window.fcoo.settings.set('latlng', 1);
+        document.write('Format=1 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
+
+        window.fcoo.settings.set('latlng', 2);
+        document.write('Format=2 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
+
+        window.fcoo.settings.set('latlng', save);
+	</script>
+</body>
+</html>
