@@ -33,4 +33,16 @@
 
     });
 
+
+    //Update the latlng-format when the number-format is changed
+    ns.events.on( 'numberformatchanged', function(){
+        ns.settings.set('latlng', window.latLngFormat.options.formatId );
+    });
+
+/* TODO - if N,S,E,W need to be in local language (da: NSØV)
+    //Update the latlng-format when the language is changed
+    ns.events.on( 'languagechanged', function(){
+        ns.settings.set('latlng', window.latLngFormat.options.formatId );
+    });
+*/
 }(jQuery, this, document));
