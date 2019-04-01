@@ -14,20 +14,17 @@
 <body>
 
 
-	
-	
+
+
 	<script src="bower_components.js"></script>
 	<script src="../src/fcoo-latlng-format.js"></script>
 	<script>
         var save = window.fcoo.settings.get('latlng');
-        window.fcoo.settings.set('latlng', 0);
-        document.write('Format=0 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
 
-        window.fcoo.settings.set('latlng', 1);
-        document.write('Format=1 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
-
-        window.fcoo.settings.set('latlng', 2);
-        document.write('Format=2 => '+latLngFormat(55.1234, 12.1234).format().join('   ')+'<br>');
+        for (var i=latLngFormat.LATLNGFORMAT_FIRST; i<=latLngFormat.LATLNGFORMAT_LAST; i++ ){
+            window.fcoo.settings.set('latlng', i);
+            document.write('Format='+i+'=> '+latLngFormat(55.1234, 12.4321).format()+'<br>');
+        }
 
         window.fcoo.settings.set('latlng', save);
 	</script>

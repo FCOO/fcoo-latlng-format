@@ -1,6 +1,6 @@
 {
   "name": "fcoo-latlng-format",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "homepage": "https://github.com/FCOO/fcoo-latlng-format",
   "authors": [
     "Niels Holt"
@@ -14,7 +14,7 @@
     "url": "git://github.com/FCOO/fcoo-latlng-format.git"
   },
   "dependencies": {
-    "latlng-format": "fcoo/latlng-format#^2.0.0",
+    "latlng-format": "fcoo/latlng-format#^3.0.0",
     "fcoo-settings": "fcoo/fcoo-settings#^1.2.0"
   },
   "devDependencies": {},
