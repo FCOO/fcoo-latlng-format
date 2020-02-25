@@ -47,17 +47,26 @@
         //Degrees Minutes Seconds Decimal Seconds: N65d30'15.3"  d='degree sign'
         {
             id  : window.latLngFormat.LATLNGFORMAT_DMSS,
-            text: {da:'Længde/Breddegrader <span class="text-monospace">(G'+dC+'M S.s)</span>', en:'Longitude/Latitude <span class="text-monospace">(D'+dC+'M\'S.s")</span>'}
+            text: {
+                da:'Længde/Breddegrader: <span class="text-monospace">G'+dC+'M S.s</span>',
+                en:'Longitude/Latitude: <span class="text-monospace">D'+dC+'M\'S.s"</span>'
+            }
         },
         //Degrees Decimal minutes                : N65d30.258'
         {
             id  : window.latLngFormat.LATLNGFORMAT_DMM,
-            text: {da:'Længde/Breddegrader <span class="text-monospace">(G'+dC+'M.mmm\')</span>', en:'Longitude/Latitude <span class="text-monospace">(D'+dC+'M.mmm\')</span>'}
+            text: {
+                da:'Længde/Breddegrader: <span class="text-monospace">G'+dC+'M.mmm\'</span>',
+                en:'Longitude/Latitude: <span class="text-monospace">D'+dC+'M.mmm\'</span>'
+            }
         },
         //Decimal degrees                        : N41.1234d
         {
             id  : window.latLngFormat.LATLNGFORMAT_DD,
-            text: {da:'Længde/Breddegrader <span class="text-monospace">(G.gggg'+dC+')</span>', en:'Longitude/Latitude <span class="text-monospace">(D.dddd'+dC+')</span>'}
+            text: {
+                da:'Længde/Breddegrader: <span class="text-monospace">G.gggg'+dC+'</span>',
+                en:'Longitude/Latitude: <span class="text-monospace">D.dddd'+dC+'</span>'
+            }
         },
         //UTM                                    : 29Q 286657 2492164
         {
