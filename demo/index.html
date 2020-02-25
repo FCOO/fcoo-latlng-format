@@ -8,25 +8,36 @@
 
 	<meta name='copyright' content='FCOO'>
 	<meta name='owner' content='FCOO'>
-
+    <link  href="css/all.css" rel="stylesheet">
+    <link  href="bower_components.css" rel="stylesheet">
+    <style>
+        html, body {width:100%; height:100%}
+    </style>
 </head>
 
 <body>
-
-
-
-
 	<script src="bower_components.js"></script>
 	<script src="../src/fcoo-latlng-format.js"></script>
 	<script>
-        var save = window.fcoo.settings.get('latlng');
+        window.bsIsTouch = false;
+        window.bsIsTouch = (window.location.search =='?touch');
+        i18next.init();
+        i18next.changeLanguage('en');
+        i18next.options.fallbackLng = i18next.language == 'da' ? 'en' : 'da';
 
+/*
+        var save = window.fcoo.globalSetting.get('latlng');
         for (var i=latLngFormat.LATLNGFORMAT_FIRST; i<=latLngFormat.LATLNGFORMAT_LAST; i++ ){
-            window.fcoo.settings.set('latlng', i);
+            window.fcoo.globalSetting.set({'latlng': i});
             document.write('Format='+i+'=> '+latLngFormat(55.1234, 12.4321).format()+'<br>');
         }
+        window.fcoo.globalSetting.set({'latlng': save});
+*/
 
-        window.fcoo.settings.set('latlng', save);
+        $('body').on('contextmenu', function(){
+            fcoo.globalSetting.edit(fcoo.events.LATLNGFORMATCHANGED);
+            return false;
+        });
 	</script>
 </body>
 </html>
