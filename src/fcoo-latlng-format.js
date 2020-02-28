@@ -28,8 +28,7 @@
                           window.latLngFormat.setFormat( latlngFormatId );
                       },
         defaultValue: window.latLngFormat.LATLNGFORMAT_DMSS,
-//HER        callApply   : true,
-//HER        globalEvents: ns.events.LATLNGFORMATCHANGED
+        globalEvents: ns.events.LATLNGFORMATCHANGED
 
     });
 
