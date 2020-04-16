@@ -33,12 +33,6 @@
     });
 
 
-    //Update the latlng-format when the number-format is changed
-    ns.events.on( window.fcoo.events.NUMBERFORMATCHANGED, function(){
-        ns.globalSetting.set({latlng: window.latLngFormat.options.formatId} );
-    });
-
-
     //Create content for modal-form with settings
     var items = [];
     var dC = window.latLngFormat.options.degreeChar;
