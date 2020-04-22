@@ -15,8 +15,13 @@
     window.fcoo = window.fcoo || {};
     var ns = window.fcoo;
 
+
+    //Set first and last id for longitude-latitude-formats
+    window.latLngFormat.LATLNGFORMAT_FIRST_LATLNG = window.latLngFormat.LATLNGFORMAT_DMSS;
+    window.latLngFormat.LATLNGFORMAT_LAST_LATLNG = window.latLngFormat.LATLNGFORMAT_DD;
+
     /***********************************************************
-    Set up and load latlng-format via fcoo.settings
+    Set up and load latlng-format via fcoo.settings and add options.text to latlngFormat
     ***********************************************************/
     ns.globalSetting.add({
         id          : 'latlng',
@@ -32,6 +37,7 @@
 
     });
 
+    window.latLngFormat.options.text = {};
 
     //Create content for modal-form with settings
     var items = [];
@@ -77,8 +83,10 @@
             text: 'Natural Area Code (NAC)'
         }],
         function(index, info){
-            if (info.id !== undefined)
+            if (info.id !== undefined){
                 items.push(info);
+                window.latLngFormat.options.text[info.id] = info.text;
+            }
         }
     );
 
