@@ -1,6 +1,6 @@
 {
   "name": "fcoo-latlng-format",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "homepage": "https://github.com/FCOO/fcoo-latlng-format",
   "authors": [
     "Niels Holt"
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "latlng-format": "fcoo/latlng-format#^3.0.0",
-    "fcoo-settings": "fcoo/fcoo-settings#^2.0.0"
+    "fcoo-settings": "fcoo/fcoo-settings#latest"
   },
   "devDependencies": {},
   "license": "MIT",
