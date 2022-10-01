@@ -47,24 +47,24 @@
         {
             id  : window.latLngFormat.LATLNGFORMAT_DMSS,
             text: {
-                da:'Bredde/Længdegrader: <span class="text-monospace">G'+dC+'M S.s</span>',
-                en:'Latitude/Longitude: <span class="text-monospace">D'+dC+'M\'S.s"</span>'
+                da:'Bredde/Længdegrader: <span class="font-monospace">G'+dC+'M S.s</span>',
+                en:'Latitude/Longitude: <span class="font-monospace">D'+dC+'M\'S.s"</span>'
             }
         },
         //Degrees Decimal minutes                : N65d30.258'
         {
             id  : window.latLngFormat.LATLNGFORMAT_DMM,
             text: {
-                da:'Bredde/Længdegrader: <span class="text-monospace">G'+dC+'M.mmm\'</span>',
-                en:'Latitude/Longitude: <span class="text-monospace">D'+dC+'M.mmm\'</span>'
+                da:'Bredde/Længdegrader: <span class="font-monospace">G'+dC+'M.mmm\'</span>',
+                en:'Latitude/Longitude: <span class="font-monospace">D'+dC+'M.mmm\'</span>'
             }
         },
         //Decimal degrees                        : N41.1234d
         {
             id  : window.latLngFormat.LATLNGFORMAT_DD,
             text: {
-                da:'Bredde/Længdegrader: <span class="text-monospace">G.gggg'+dC+'</span>',
-                en:'Latitude/Longitude: <span class="text-monospace">D.dddd'+dC+'</span>'
+                da:'Bredde/Længdegrader: <span class="font-monospace">G.gggg'+dC+'</span>',
+                en:'Latitude/Longitude: <span class="font-monospace">D.dddd'+dC+'</span>'
             }
         },
         //UTM                                    : 29Q 286657 2492164
